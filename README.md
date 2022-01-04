@@ -1,43 +1,43 @@
-> 这是一个运行在cloudflare workers 上的博客程序,使用 cloudflare KV作为数据库,无其他依赖.
-兼容静态博客的速度,以及动态博客的灵活性,方便搭建不折腾.
-演示地址: [https://blog.gezhong.vip](https://blog.gezhong.vip "cf-blog演示站点")
+> This is a blog program running on cloudflare workers, using cloudflare KV as a database, and no other dependencies.
+Compatible with the speed of static blogs and the flexibility of dynamic blogs, it is convenient to build without tossing.
+Demo address: [https://blog.gezhong.vip](https://blog.gezhong.vip "cf-blog demo site")
 
-### TG 讨论群: [@CloudflareBlog](https://t.me/cloudflareblog "")
-# 主要特点
-* 使用workers提供的KV作为数据库
-* 使用cloudflare缓存html来降低KV的读写
-* 所有html页面均为缓存,可达到静态博客的速度
-* 使用KV作为数据库,可达到wordpress的灵活性
-* 后台使用markdown语法,方便快捷
-* 一键发布(页面重构+缓存清理)
+### TG discussion group: [@CloudflareBlog](https://t.me/cloudflareblog "")
+# main feature
+* Use the KV provided by workers as the database
+* Use cloudflare to cache html to reduce KV reads and writes
+* All html pages are cached, which can reach the speed of static blogs
+* Use KV as a database to achieve the flexibility of wordpress
+* Use markdown syntax in the background, which is convenient and fast
+* One-click publishing (page refactoring + cache cleaning)
 
-# 承载能力
- * KV基本不存在瓶颈,因为使用了缓存,读写很少
- * 唯一瓶颈是 workers的日访问量10w,大约能承受2万IP /日
- * 文章数:1G存储空间,几万篇问题不大
+# Carrying capacity
+ * There is basically no bottleneck in KV, because the cache is used and there are few reads and writes
+ * The only bottleneck is that the daily visits of workers are 10w, which can withstand about 20,000 IP/day
+ * Number of articles: 1G storage space, tens of thousands of articles are not a big problem
 
-# 部署步骤
-  这里没有实时预览真难受,一系列坑会慢慢填到博客,敬请关注 [https://blog.gezhong.vip](https://blog.gezhong.vip "")
+# Deployment steps
+  It’s really uncomfortable that there is no real-time preview here. A series of pits will be slowly filled in the blog, so stay tuned [https://blog.gezhong.vip](https://blog.gezhong.vip "")
 
-# 更新日志
+# Update log
 
-> [持续更新地址https://blog.gezhong.vip/article/009000/update-log.html](https://blog.gezhong.vip/article/009000/update-log.html "更新日志")
+> [Continuous update address https://blog.gezhong.vip/article/009000/update-log.html](https://blog.gezhong.vip/article/009000/update-log.html "Update log")
   
-## 最近更新(2020-12-31)
-* 2020-12-31:加入sitemap.xml
-* 2020-12-24:本次更新,主要针对seo和阅读次数,以及多项细节优化
+## Last update (2020-12-31)
+* 2020-12-31: Add sitemap.xml
+* 2020-12-24: This update is mainly for seo and reading times, as well as a number of detailed optimizations
 
 
 
 
-### 前端演示:[https://blog.gezhong.vip](https://blog.gezhong.vip "演示站点")
+### Front-end demo: [https://blog.gezhong.vip](https://blog.gezhong.vip "demo site")
 ![](https://s3.ax1x.com/2020/12/22/rrP81S.png)
 
-### 后端演示:
+### Backend demo:
 ![](https://s3.ax1x.com/2020/12/22/rrAWrD.png)
 
-## 捐赠
+## Donate
 
-如果你觉的本项目帮到你了，还请资持一下作者
+If you think this project has helped you, please give us some credit for the author
 
-* [捐赠](https://afdian.net/@zhaopp "爱发电")  
+* [Donation](https://afdian.net/@zhaopp "Love Power Generation")
